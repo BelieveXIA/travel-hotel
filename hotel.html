@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>台湾台北-酒店查询</title>
+	
+	<link rel="stylesheet" type="text/css" href="./css/style-2.css">
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+	<script src="./js/travel.js"></script>
+</head>
+<body>
+	<header class ="header">
+		<div class="header-nav">
+			<div class="nav-left">
+				<ul>
+					<li class="nav-logo">
+						<img src="img/web_logo.png" title="旅游网">
+					</li>
+					<li class="nav-location">
+						<img src="img/icon_location.png" title="所在地"><span>广州</span>
+					</li>
+				</ul>
+			</div>
+			<div class="nav-body">
+				<ul class="nav-body-ul">
+					<li>
+						<a href="" onclick="">旅行团</a>
+					</li>
+					<li>
+						<a href="" onclick="">机票</a>
+					</li>
+					<li>
+						<a href="" onclick="" style="color: #03c;">酒店</a>
+					</li>
+					<li>
+						<a href="" onclick="">自由行</a>
+					</li>
+					<li>
+						<a href="" onclick="">玩乐-美食</a>
+					</li>
+					<li>
+						<a href="" onclick="">邮轮</a>
+					</li>
+					<li>
+						<a href="" onclick="">独立包团</a>
+					</li>
+					<li>
+						<a href="" onclick="">旅游部落</a>
+					</li>
+					<li>
+						<a href="" onclick="">限时优惠</a>
+					</li>
+				</ul>
+			</div>
+			<div class="nav-right">
+				<div class="nav-right-body">
+					<ul>
+						<li>
+							<img src="img/hdk.png" title="港币">
+						</li>
+						<li>
+							<img src="img/font.png" title="语言">
+						</li>
+						<li class="rel-me">
+							<a><img src="img/rel.png" title="联络我们"></a>
+							<ul class="contact">
+								<li>
+									<span>香港 (852) 2928-8882</span>
+								</li>
+								<li>
+									<span>澳门 (853) 2837-0522</span>
+								</li>
+								<li>
+									<span>台湾 (免付费) 080-9088-298</span>
+								</li>
+								<li>
+									<span>服务时间：每日上午9时至下午8时</span>
+								</li>
+								<li>
+									<span>
+										<a href="">服务查询</a>
+									</span>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<div class="hr_nav">|</div>
+						</li>
+						<li>
+							<img src="img/login.png" title="登入">
+						</li>
+						<li class ="btn-login">
+							<div class="btn-login-nav">登入</div>
+							<ul class="account-panel">
+								<li>
+									<i class="login" ></i>
+									<a href="" onclick=""><span>登入</span></a>
+								</li>
+								<li>
+									<i class="order"></i>
+									<a href="" onclick=""><span>订单查询</span></a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="body">
+		<div class="first-body">
+			<div class="fb-content">
+				<form>
+					<div class="fbc-dectination">
+						<label class="fbc-dectination-title">目的地名称</label>
+						<div class="fbsc-form-destination-body">
+							<div class="destination" id="dec_input_btn">
+								<input type="" name="" autocomplete="off" placeholder="请输入目的地的名称" class="fbc-dectination-input"/>
+							</div>
+							<div class="destination-select-hide" id="dec_select" style="display: none;">
+								<div class="dsh-title">
+									<p>支持中文/英文输入</p>
+								</div>
+								<ul id="select_value">
+									<li>
+										<div class="dsh-title">亚洲</div>
+										<div class="dsh-title-content">
+											<a class="des" href="hotel.html">台北</a>
+											<a class="des">台中</a>
+											<a class="des">高雄</a>
+											<a class="des">垦丁</a>
+											<a class="des">东京</a>
+											<a class="des">大阪</a>
+											<a class="des">札幌</a>
+											<a class="des">冲绳县</a>
+											<a class="des">首尔</a>
+											<a class="des">新加坡</a>
+											<a class="des">吉隆坡</a>
+											<a class="des">沙巴州</a>
+											<a class="des">曼谷</a>
+											<a class="des">布吉岛</a>
+										</div>
+									</li>
+									<li>
+										<div class="dsh-title">中国</div>
+										<div class="dsh-title-content">
+											<a class="des">香港</a>
+											<a class="des">澳门</a>
+											<a class="des">深圳</a>
+											<a class="des">广州</a>
+											<a class="des">北京</a>
+											<a class="des">上海</a>
+											<a class="des">成都</a>
+										</div>
+									</li>
+									<li>
+										<div class="dsh-title">长线</div>
+										<div class="dsh-title-content">
+											<a class="des">伦敦</a>
+											<a class="des">巴黎</a>
+											<a class="des">悉尼</a>
+											<a class="des">墨尔本</a>
+											<a class="des">温哥华</a>
+											<a class="des">多伦多</a>
+											<a class="des">三蕃市</a>
+											<a class="des">洛杉矶</a>
+											<a class="des">纽约</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="fbc-data">
+						<label class="fbc-data-come">入住日期</label>
+						<label class="fbc-data-out">退房日期</label>
+						<input type="text" name="" class="fbc-data-input1" value="7月28日" />
+						<input type="text" name="" class="fbc-data-input2" value="2晚" />
+						<input type="text" name="" class="fbc-data-input3" value="7月30日" />
+					</div>
+					<div class="fbc-live_numb">
+						<label class="fbc-live_numb-title">每房入住人数</label>
+						<div class="fbc-live_numb-select">
+							<select>
+								<option value="1人"selected="selected">1人</option>
+								<option value="2人">2人</option>
+								<option value="3人">3人</option>
+								<option value="4人">4人</option>
+								<option value="5人">5人</option>
+								<option value="6人">6人</option>
+								<option value="7人">7人</option>
+								<option value="8人">8人</option>
+							</select>
+						</div>
+					</div>
+					<a href="" class="fbc-search">搜寻</a>
+				</form>
+			</div>
+		</div>
+		<div class="second-body">
+			<div class="second-body-content">
+				<div class="second-body-left">
+					<div class="sbl-map">
+						<img src="./img/map_show.png" class="sbl-map-bac">
+						<button class="sbl-map-show_btn">显示地图</button>
+					</div>
+					<div class="sbl-search">
+						<div class="sbl-search-select">
+							<label class="sbl-search-select-title">自订筛选</label>
+							<div class="sbl-search-select-panel" >
+
+							</div>
+						</div>
+						<div class="sbl-search-hot_select">
+							<label class="sec_title">热门筛选</label>
+							<div  role="group" class="sbl-search-select_item">
+								<label role="checkbox" class="checkbox-label">
+									<input type="checkbox" class="checkbox_select" value="免费取消">
+									<span class="checkbox_content">免费取消</span>
+								</label><br/>
+								<label role="checkbox" class="checkbox-label">
+									<input type="checkbox" class="checkbox_select" value="及时确认">
+									<span class="checkbox_content">及时确认</span>
+								</label><br/>
+								<label role="checkbox" class="checkbox-label">
+									<input type="checkbox" class="checkbox_select" value="免费WIFI">
+									<span class="checkbox_content">免费WIFI</span>
+								</label><br/>
+								<label role="checkbox" class="checkbox-label">
+									<input type="checkbox" class="checkbox_select" value="免费早餐">
+									<span class="checkbox_content">免费早餐</span>
+								</label><br/>
+								<label role="checkbox" class="checkbox-label">
+									<input type="checkbox" class="checkbox_select" value="超赞：评分4.5分以上">
+									<span class="checkbox_content">超赞：评分4.5分以上</span>
+								</label><br/>
+							</div>
+						</div>
+						<hr class="second-body-left-hr">
+						<div class="sbl-search-star">
+							<label class="sec_title">星级</label>
+							<div class="sbl-search-star-content">
+								<input type="button" value="2星以下"/>
+								<input type="button" value="3星"/>
+								<input type="button" value="4星"/>
+								<input type="button" value="5星"/>
+							</div>
+						</div>
+						<hr class="second-body-left-hr">
+						<div class="sbl-search-days_price">
+							<label class="sec_title">每晚价格（不包括税项及附加费）</label>
+							<div class="sbl-search-days_price-content">
+								<label class="days_price-title">HKD</label>
+								<label class="days_price-title">HKD</label>
+								<br />
+								<input type="text" class="days_price-input">
+								<span>-</span>
+								<input type="text" class="days_price-input">
+								<input type="button" class="days_price-btn" value="确认">
+							</div>
+						</div>
+						<hr class="second-body-left-hr">
+						<div class="sbl-search-pay_mode">
+							<label class="sec_title">付费方式</label>
+							<div  role="group" class="sbl-search-select_item">
+								<label role="checkbox" class="checkbox-label">
+									<input type="checkbox" class="checkbox_select" value="于酒店付费">
+									<span class="checkbox_content">于酒店付费</span>
+								</label><br/>
+								<label role="checkbox" class="checkbox-label">
+									<input type="checkbox" class="checkbox_select" value="网上预付">
+									<span class="checkbox_content">网上预付</span>
+								</label><br/>
+							</div>
+						</div>
+						<hr class="second-body-left-hr">
+						<div class="sbl-search-place">
+							<label class="sec_title">位置</label>
+							<div class="place-content">
+								<label class="place-content-title">商业区</label>
+								<span class="pc-symbol">▲</span><span class="pc-symbol">▼</span>	
+							</div>
+						</div>	
+						<hr class="second-body-left-hr">
+						<div class="place-content">
+							<label class="place-content-title">行政区</label>
+							<span class="pc-symbol-b">▲</span><span class="pc-symbol">▼</span>
+						</div>
+						<hr class="second-body-left-hr">
+						<div class="place-content">
+							<label class="place-content-title">商业区</label>
+							<span class="pc-symbol-b">▲</span><span class="pc-symbol">▼</span>
+						</div>
+						<hr class="second-body-left-hr">
+						<div class="place-content">
+							<label class="place-content-title">机场及铁路站</label>
+							<span class="pc-symbol-b">▲</span><span class="pc-symbol">▼</span>
+						</div>
+						<hr class="second-body-left-hr">
+						<div class="place-content">
+							<label class="place-content-title">地铁线</label>
+							<span class="pc-symbol-b">▲</span><span class="pc-symbol">▼</span>
+						</div>
+						<hr class="second-body-left-hr">
+						<div class="sbl-search-facility">
+							<label class="sec_title">设施</label>
+							<div  role="group" class="sbl-search-select_item">
+								<label role="checkbox" class="checkbox-label">
+									<input type="checkbox" class="checkbox_select" value="2张单人床">
+									<span class="checkbox_content">2张单人床</span>
+								</label><br/>
+								<label role="checkbox" class="checkbox-label">
+									<input type="checkbox" class="checkbox_select" value="双人床">
+									<span class="checkbox_content">双人床</span>
+								</label><br/>
+								<label role="checkbox" class="checkbox-label">
+									<input type="checkbox" class="checkbox_select" value="穿梭机场巴士">
+									<span class="checkbox_content">穿梭机场巴士</span>
+								</label><br/>
+								<label role="checkbox" class="checkbox-label">
+									<input type="checkbox" class="checkbox_select" value="停车场">
+									<span class="checkbox_content">停车场</span>
+								</label><br/>
+								<label role="checkbox" class="checkbox-label">
+									<input type="checkbox" class="checkbox_select" value="健身房">
+									<span class="checkbox_content">健身房</span>
+								</label><br/>
+								<label role="checkbox" class="checkbox-label">
+									<input type="checkbox" class="checkbox_select" value="SPA">
+									<span class="checkbox_content">SPA</span>
+								</label><br/>
+								<label role="checkbox" class="checkbox-label">
+									<input type="checkbox" class="checkbox_select" value="免费有线宽带">
+									<span class="checkbox_content">免费有线宽带</span>
+								</label><br/>
+								<label role="checkbox" class="checkbox-label">
+									<input type="checkbox" class="checkbox_select" value="餐厅">
+									<span class="checkbox_content">餐厅</span>
+								</label><br/>
+								<label role="checkbox" class="checkbox-label">
+									<input type="checkbox" class="checkbox_select" value="商务中心">
+									<span class="checkbox_content">商务中心</span>
+								</label><br/>
+							</div>						
+						</div>
+						<hr class="second-body-left-hr">
+						<div class="sbl-search-brand">
+							<label class="sec_title">品牌</label>
+							<div class="brand-content">
+								<div class="brand-content-kind">
+									<i class="bck-symbol">▲</i>
+									<label class="brand-content-title">高端连锁</label>
+								</div>
+								<div class="brand-content-kind">
+									<i class="bck-symbol">▲</i>
+									<label class="brand-content-title">经济连锁</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sbl-history">
+						<label class="sbl-history-title">我浏览过的酒店</label>
+						<input type="text" autocomplete="off" readOnly="true" placeholder="暂无记录"
+						class="sbl-history-show" />
+					</div>
+					<div class="sbl-search-tenet">
+						<label class="sbl-search-tenet-title">**旅游</label><br/>
+						<label class="sbl-search-tenet-title">你唯一嘅网上旅游预订平台</label>
+						<div class="sbl-search-tenet-content">
+							<div class="tenet-content-main">
+								<img src="./img/tenet_img.png" class="tenet-content-img">
+								<div class="tenet-content-right">
+									<label class="tenet-content-title">选择够多</label><br/>
+									<span class="tenet-content-say">全球逾200个城市的机票及超过100万家酒店</span>
+								</div>
+							</div>
+							<div class="tenet-content-main">
+								<img src="./img/tenet_img.png" class="tenet-content-img">
+								<div class="tenet-content-right">
+									<label class="tenet-content-title">价格特惠</label><br/>
+									<span class="tenet-content-say">中国酒店低价保证，网罗17间廉航机票</span>
+								</div>
+							</div>
+							<div class="tenet-content-main">
+								<img src="./img/tenet_img.png" class="tenet-content-img">
+								<div class="tenet-content-right">
+									<label class="tenet-content-title">预定更快</label><br/>
+									<span class="tenet-content-say">提供全天候预定机票服务，即使确认</span>
+								</div>
+							</div>
+							<div class="tenet-content-main">
+								<img src="./img/tenet_img.png" class="tenet-content-img">
+								<div class="tenet-content-right">
+									<label class="tenet-content-title">值得信赖</label><br/>
+									<span class="tenet-content-say">专注运营旅游服务逾半个世纪，口碑载道</span>
+								</div>
+							</div>
+							<div class="tenet-content-main">
+								<img src="./img/tenet_img.png" class="tenet-content-img">
+								<div class="tenet-content-right">
+									<label class="tenet-content-title">更多著数</label><br/>
+									<span class="tenet-content-say">会员订购赚取积分，享受积分当钱用</span>
+								</div>
+							</div>
+						</div>					
+					</div>
+				</div>
+				<div class="second-body-right">
+					<div class="sbr-title">
+						<label class="sbr-title-a">共找到</label>
+						<label class="sbr-title-b">888</label>
+						<label class="sbr-title-a">家</label>
+						<label class="sbr-title-c">台北</label>
+						<label class="sbr-title-a">酒店</label>
+					</div>
+					<div class="sbr-top_nav">
+						<ul>
+							<li class="top_nav-sort sort-1"><a>公司推荐</a></li>
+							<li class="top_nav-sort">
+								<a>价格
+									<i class="top_nav-sort-up">∧</i>
+									<i class="top_nav-sort-down" style="display: none;">∨</i>
+								</a>
+							</li>
+							<li class="top_nav-sort"><a>好评优先</a></li>
+							<li class="top_nav-sort">
+								<a>酒店星级
+									<i class="top_nav-sort-up">∧</i>
+									<i class="top_nav-sort-down" style="display: none;">∨</i>
+								</a>
+							</li>
+							<li class="top_nav-sort"><a>距离近至远</a></li>
+						</ul>
+					</div>
+					<div class="sbr-list">
+						<div class="sbr-content">
+							<img src="img/hotel/Sheraton.jpg" class="sbr-content-img" title="台北喜来登大饭店" />
+							<div class="sbr-content-center">
+								<div class="center-first">
+									<label class="center-first-title_chs">台北喜来登大饭店</label><br/>
+									<label class="center-first-title_en">Sheraton Grand Taipei Hotel</label><br/>
+									<img src="img/drill_5.png" class="center-first-drill">
+									<span class="center-first-comment">"干净卫生"  "商务出行"</span><br/>
+									<a href="" class="center-first-place">台北火车站地区</a>
+									<span class="center-first-place_2">距离市中心2公里</span>
+								</div>
+								<div class="center-second">
+									<img src="img/wifi_logo.png" class="center-second-img_label" title="免费Wifi"/>
+									<img src="img/car_logo.png" class="center-second-img_label" title="接机服务"/>
+									<img src="img/sport_logo.png" class="center-second-img_label" title="健身房"/>
+									<img src="img/swim_logo.png" class="center-second-img_label" title="游泳池"/>
+									<img src="img/cooked_logo.png" class="center-second-img_label" title="餐厅"/>
+									<img src="img/coffee_logo.png" class="center-second-img_label" title="咖啡厅"/>
+									<img src="img/nosmoke_logo.png" class="center-second-img_label" title="无烟楼层"/>
+								</div>
+								<div class="center-third">
+									<label class="center-third-title">超棒</label>
+									<label class="center-third-title2">4.6</label><br/>
+									<label class="center-third-comment_numb">1409则评论</label>
+								</div>
+							</div>
+							<hr class="sbr-content-hr" />
+							<div class="sbr-content-right">
+								<div class="right-price">
+									<label class="right-price-mode">HKD</label>
+									<label class="right-price-numb">1,172</label><br/>
+									<span class="right-price-unit">每间房每晚价格</span>
+								</div>
+								<input type="button" class="right-price-button" value="选择">
+							</div>					
+						</div>
+						<div class="sbr-content">
+							<img src="img/hotel/Howard Plaza.jpg" class="sbr-content-img" title="台北福华大饭店" />
+							<div class="sbr-content-center">
+								<div class="center-first">
+									<label class="center-first-title_chs">台北福华大饭店</label><br/>
+									<label class="center-first-title_en">Howard Plaza Hotel</label><br/>
+									<img src="img/drill_5.png" class="center-first-drill">
+									<span class="center-first-comment">"服务周到"  "休闲度假"</span><br/>
+									<a href="" class="center-first-place">忠孝敦化商圈</a>
+									<span class="center-first-place_2">距离市中心400米</span>
+								</div>
+								<div class="center-second">
+									<img src="img/wifi_logo.png" class="center-second-img_label" title="免费Wifi"/>
+									<img src="img/car_logo.png" class="center-second-img_label" title="接机服务"/>
+									<img src="img/sport_logo.png" class="center-second-img_label" title="健身房"/>
+									<img src="img/swim_logo.png" class="center-second-img_label" title="游泳池"/>
+									<img src="img/cooked_logo.png" class="center-second-img_label" title="餐厅"/>
+									<img src="img/coffee_logo.png" class="center-second-img_label" title="咖啡厅"/>
+									<img src="img/nosmoke_logo.png" class="center-second-img_label" title="无烟楼层"/>
+								</div>
+								<div class="center-third">
+									<label class="center-third-title">超棒</label>
+									<label class="center-third-title2">4.6</label><br/>
+									<label class="center-third-comment_numb">1145则评论</label>
+								</div>
+							</div>
+							<hr class="sbr-content-hr" />
+							<div class="sbr-content-right">
+								<div class="right-price">
+									<label class="right-price-mode">HKD</label>
+									<label class="right-price-numb">0,642</label><br/>
+									<span class="right-price-unit">每间房每晚价格</span>
+								</div>
+								<input type="button" class="right-price-button" value="选择">
+							</div>					
+						</div>
+						<div class="sbr-content">
+							<img src="img/hotel/Humble.jpg" class="sbr-content-img" title="台北寒舍艾丽酒店" />
+							<div class="sbr-content-center">
+								<div class="center-first">
+									<label class="center-first-title_chs">台北寒舍艾丽酒店</label><br/>
+									<label class="center-first-title_en">Humble House Taipei</label><br/>
+									<img src="img/drill_5.png" class="center-first-drill">
+									<span class="center-first-comment">"服务周到"  "设计师酒店"</span><br/>
+									<a href="" class="center-first-place">信义区/台北101大厦</a>
+									<span class="center-first-place_2">距离市中心2公里</span>
+								</div>
+								<div class="center-second">
+									<img src="img/wifi_logo.png" class="center-second-img_label" title="免费Wifi"/>
+									<img src="img/car_logo.png" class="center-second-img_label" title="接机服务"/>
+									<img src="img/sport_logo.png" class="center-second-img_label" title="健身房"/>
+									<img src="img/swim_logo.png" class="center-second-img_label" title="游泳池"/>
+									<img src="img/cooked_logo.png" class="center-second-img_label" title="餐厅"/>
+									<img src="img/coffee_logo.png" class="center-second-img_label" title="咖啡厅"/>
+									<img src="img/nosmoke_logo.png" class="center-second-img_label" title="无烟楼层"/>
+								</div>
+								<div class="center-third">
+									<label class="center-third-title">超棒</label>
+									<label class="center-third-title2">4.7</label><br/>
+									<label class="center-third-comment_numb">1363则评论</label>
+								</div>
+							</div>
+							<hr class="sbr-content-hr" />
+							<div class="sbr-content-right">
+								<div class="right-price">
+									<label class="right-price-mode">HKD</label>
+									<label class="right-price-numb">1,379</label><br/>
+									<span class="right-price-unit">每间房每晚价格</span>
+								</div>
+								<input type="button" class="right-price-button" value="选择">
+							</div>					
+						</div>
+						<div class="sbr-content">
+							<img src="img/hotel/Regent.jpg" class="sbr-content-img" title="台北晶华酒店" />
+							<div class="sbr-content-center">
+								<div class="center-first">
+									<label class="center-first-title_chs">台北晶华酒店</label><br/>
+									<label class="center-first-title_en">Regent Taipei</label><br/>
+									<img src="img/drill_5.png" class="center-first-drill">
+									<span class="center-first-comment">"位置好"  "商务出行"</span><br/>
+									<a href="" class="center-first-place">台北火车站地区</a>
+									<span class="center-first-place_2">距离市中心2公里</span>
+								</div>
+								<div class="center-second">
+									<img src="img/wifi_logo.png" class="center-second-img_label" title="免费Wifi"/>
+									<img src="img/car_logo.png" class="center-second-img_label" title="接机服务"/>
+									<img src="img/sport_logo.png" class="center-second-img_label" title="健身房"/>
+									<img src="img/swim_logo.png" class="center-second-img_label" title="游泳池"/>
+									<img src="img/cooked_logo.png" class="center-second-img_label" title="餐厅"/>
+									<img src="img/coffee_logo.png" class="center-second-img_label" title="咖啡厅"/>
+								</div>
+								<div class="center-third">
+									<label class="center-third-title">超棒</label>
+									<label class="center-third-title2">4.7</label><br/>
+									<label class="center-third-comment_numb">1123则评论</label>
+								</div>
+							</div>
+							<hr class="sbr-content-hr" />
+							<div class="sbr-content-right">
+								<div class="right-price">
+									<label class="right-price-mode">HKD</label>
+									<label class="right-price-numb">1,193</label><br/>
+									<span class="right-price-unit">每间房每晚价格</span>
+								</div>
+								<input type="button" class="right-price-button" value="选择">
+							</div>					
+						</div>
+						<div class="sbr-content">
+							<img src="img/hotel/Madison.jpg" class="sbr-content-img" title="台北慕轩饭店" />
+							<div class="sbr-content-center">
+								<div class="center-first">
+									<label class="center-first-title_chs">台北慕轩饭店</label><br/>
+									<label class="center-first-title_en">Madison Taipei Hotel</label><br/>
+									<img src="img/drill_4.png" class="center-first-drill">
+									<span class="center-first-comment">"干净卫生"  "商务出行"</span><br/>
+									<a href="" class="center-first-place">世贸中心展览中心</a>
+									<span class="center-first-place_2">距离市中心950米</span>
+								</div>
+								<div class="center-second">
+									<img src="img/wifi_logo.png" class="center-second-img_label" title="免费Wifi"/>
+									<img src="img/car_logo.png" class="center-second-img_label" title="接机服务"/>
+									<img src="img/sport_logo.png" class="center-second-img_label" title="健身房"/>
+									<img src="img/cooked_logo.png" class="center-second-img_label" title="餐厅"/>
+									<img src="img/nosmoke_logo.png" class="center-second-img_label" title="无烟楼层"/>
+								</div>
+								<div class="center-third">
+									<label class="center-third-title">超棒</label>
+									<label class="center-third-title2">4.7</label><br/>
+									<label class="center-third-comment_numb">976则评论</label>
+								</div>
+							</div>
+							<hr class="sbr-content-hr" />
+							<div class="sbr-content-right">
+								<div class="right-price">
+									<label class="right-price-mode">HKD</label>
+									<label class="right-price-numb">1,027</label><br/>
+									<span class="right-price-unit">每间房每晚价格</span>
+								</div>
+								<input type="button" class="right-price-button" value="选择">
+							</div>					
+						</div>
+						<div class="sbr-content">
+							<img src="img/hotel/Courtyard.jpg" class="sbr-content-img" title="台北六福万怡酒店" />
+							<div class="sbr-content-center">
+								<div class="center-first">
+									<label class="center-first-title_chs">台北六福万怡酒店</label><br/>
+									<label class="center-first-title_en">Courtyard Taipei</label><br/>
+									<img src="img/drill_5.png" class="center-first-drill">
+									<span class="center-first-comment">"设施齐全"  "商务出行"</span><br/>
+									<a href="" class="center-first-place">南港展览馆</a>
+									<span class="center-first-place_2">距离市中心6公里</span>
+								</div>
+								<div class="center-second">
+									<img src="img/wifi_logo.png" class="center-second-img_label" title="免费Wifi"/>
+									<img src="img/car_logo.png" class="center-second-img_label" title="接机服务"/>
+									<img src="img/sport_logo.png" class="center-second-img_label" title="健身房"/>
+									<img src="img/swim_logo.png" class="center-second-img_label" title="游泳池"/>
+									<img src="img/cooked_logo.png" class="center-second-img_label" title="餐厅"/>
+									<img src="img/nosmoke_logo.png" class="center-second-img_label" title="无烟楼层"/>
+								</div>
+								<div class="center-third">
+									<label class="center-third-title">超棒</label>
+									<label class="center-third-title2">4.7</label><br/>
+									<label class="center-third-comment_numb">1191则评论</label>
+								</div>
+							</div>
+							<hr class="sbr-content-hr" />
+							<div class="sbr-content-right">
+								<div class="right-price">
+									<label class="right-price-mode">HKD</label>
+									<label class="right-price-numb">1,045</label><br/>
+									<span class="right-price-unit">每间房每晚价格</span>
+								</div>
+								<input type="button" class="right-price-button" value="选择">
+							</div>					
+						</div>
+						<div class="sbr-content">
+							<img src="img/hotel/Mandarin Oriental.jpg" class="sbr-content-img" title="台北文华东方酒店店" />
+							<div class="sbr-content-center">
+								<div class="center-first">
+									<label class="center-first-title_chs">台北文华东方酒店店</label><br/>
+									<label class="center-first-title_en">Mandarin Oriental Taipei</label><br/>
+									<img src="img/drill_5.png" class="center-first-drill">
+									<span class="center-first-comment">"房间很好"  "浪漫情侣"</span><br/>
+									<a href="" class="center-first-place">台北小巨蛋</a>
+									<span class="center-first-place_2">距离市中心2公里</span>
+								</div>
+								<div class="center-second">
+									<img src="img/wifi_logo.png" class="center-second-img_label" title="免费Wifi"/>
+									<img src="img/car_logo.png" class="center-second-img_label" title="接机服务"/>
+									<img src="img/sport_logo.png" class="center-second-img_label" title="健身房"/>
+									<img src="img/swim_logo.png" class="center-second-img_label" title="游泳池"/>
+									<img src="img/cooked_logo.png" class="center-second-img_label" title="餐厅"/>
+									<img src="img/coffee_logo.png" class="center-second-img_label" title="咖啡厅"/>
+									<img src="img/nosmoke_logo.png" class="center-second-img_label" title="无烟楼层"/>
+								</div>
+								<div class="center-third">
+									<label class="center-third-title">超棒</label>
+									<label class="center-third-title2">4.8</label><br/>
+									<label class="center-third-comment_numb">1188则评论</label>
+								</div>
+							</div>
+							<hr class="sbr-content-hr" />
+							<div class="sbr-content-right">
+								<div class="right-price">
+									<label class="right-price-mode">HKD</label>
+									<label class="right-price-numb">2,260</label><br/>
+									<span class="right-price-unit">每间房每晚价格</span>
+								</div>
+								<input type="button" class="right-price-button" value="选择">
+							</div>					
+						</div>
+						<div class="sbr-content">
+							<img src="img/hotel/The Grand.jpg" class="sbr-content-img" title="台北圆山大饭店" />
+							<div class="sbr-content-center">
+								<div class="center-first">
+									<label class="center-first-title_chs">台北圆山大饭店</label><br/>
+									<label class="center-first-title_en">The Grand Hotel</label><br/>
+									<img src="img/drill_5.png" class="center-first-drill">
+									<span class="center-first-comment">"豪华"  "商务出行"</span><br/>
+									<a href="" class="center-first-place">士林观光夜市</a>
+									<span class="center-first-place_2">距离市中心4公里</span>
+								</div>
+								<div class="center-second">
+									<img src="img/wifi_logo.png" class="center-second-img_label" title="免费Wifi"/>
+									<img src="img/sport_logo.png" class="center-second-img_label" title="健身房"/>
+									<img src="img/swim_logo.png" class="center-second-img_label" title="游泳池"/>
+									<img src="img/cooked_logo.png" class="center-second-img_label" title="餐厅"/>
+									<img src="img/coffee_logo.png" class="center-second-img_label" title="咖啡厅"/>
+									<img src="img/nosmoke_logo.png" class="center-second-img_label" title="无烟楼层"/>
+								</div>
+								<div class="center-third">
+									<label class="center-third-title">超棒</label>
+									<label class="center-third-title2">4.7</label><br/>
+									<label class="center-third-comment_numb">6882则评论</label>
+								</div>
+							</div>
+							<hr class="sbr-content-hr" />
+							<div class="sbr-content-right">
+								<div class="right-price">
+									<label class="right-price-mode">HKD</label>
+									<label class="right-price-numb">0,794</label><br/>
+									<span class="right-price-unit">每间房每晚价格</span>
+								</div>
+								<input type="button" class="right-price-button" value="选择">
+							</div>					
+						</div>
+						<div class="sbr-content">
+							<img src="img/hotel/Palais de Chine.jpg" class="sbr-content-img" title="台北君品酒店" />
+							<div class="sbr-content-center">
+								<div class="center-first">
+									<label class="center-first-title_chs">台北君品酒店</label><br/>
+									<label class="center-first-title_en">Palais de Chine Hotel</label><br/>
+									<img src="img/drill_5.png" class="center-first-drill">
+									<span class="center-first-comment">"设施齐全"  "商务出行"</span><br/>
+									<a href="" class="center-first-place">台北火车站地区</a>
+									<span class="center-first-place_2">距离市中心3公里</span>
+								</div>
+								<div class="center-second">
+									<img src="img/wifi_logo.png" class="center-second-img_label" title="免费Wifi"/>
+									<img src="img/sport_logo.png" class="center-second-img_label" title="健身房"/>
+									<img src="img/swim_logo.png" class="center-second-img_label" title="游泳池"/>
+									<img src="img/cooked_logo.png" class="center-second-img_label" title="餐厅"/>
+									<img src="img/nosmoke_logo.png" class="center-second-img_label" title="无烟楼层"/>
+								</div>
+								<div class="center-third">
+									<label class="center-third-title">超棒</label>
+									<label class="center-third-title2">4.7</label><br/>
+									<label class="center-third-comment_numb">1121则评论</label>
+								</div>
+							</div>
+							<hr class="sbr-content-hr" />
+							<div class="sbr-content-right">
+								<div class="right-price">
+									<label class="right-price-mode">HKD</label>
+									<label class="right-price-numb">1,164</label><br/>
+									<span class="right-price-unit">每间房每晚价格</span>
+								</div>
+								<input type="button" class="right-price-button" value="选择">
+							</div>					
+						</div>
+						<div class="sbr-content">
+							<img src="img/hotel/Caesar Metro.jpg" class="sbr-content-img" title="台北凯达大饭店" />
+							<div class="sbr-content-center">
+								<div class="center-first">
+									<label class="center-first-title_chs">台北凯达大饭店</label><br/>
+									<label class="center-first-title_en">Caesar Metro Taipei</label><br/>
+									<img src="img/drill_4.png" class="center-first-drill">
+									<span class="center-first-comment">"设施齐全"</span><br/>
+									<a href="" class="center-first-place">西门町商圈</a>
+									<span class="center-first-place_2">距离市中心5公里</span>
+								</div>
+								<div class="center-second">
+									<img src="img/wifi_logo.png" class="center-second-img_label" title="免费Wifi"/>
+									<img src="img/car_logo.png" class="center-second-img_label" title="接机服务"/>
+									<img src="img/sport_logo.png" class="center-second-img_label" title="健身房"/>
+									<img src="img/swim_logo.png" class="center-second-img_label" title="游泳池"/>
+									<img src="img/cooked_logo.png" class="center-second-img_label" title="餐厅"/>
+									<img src="img/coffee_logo.png" class="center-second-img_label" title="咖啡厅"/>
+									<img src="img/nosmoke_logo.png" class="center-second-img_label" title="无烟楼层"/>
+								</div>
+								<div class="center-third">
+									<label class="center-third-title">超棒</label>
+									<label class="center-third-title2">4.6</label><br/>
+									<label class="center-third-comment_numb">610则评论</label>
+								</div>
+							</div>
+							<hr class="sbr-content-hr" />
+							<div class="sbr-content-right">
+								<div class="right-price">
+									<label class="right-price-mode">HKD</label>
+									<label class="right-price-numb">0,737</label><br/>
+									<span class="right-price-unit">每间房每晚价格</span>
+								</div>
+								<input type="button" class="right-price-button" value="选择">
+							</div>					
+						</div>
+					</div>
+					<div class="sbr-bottom_nav">
+						<div class="sbr-bottom_nav-content">
+							<ul>
+								<li class="sbr-bottom_nav-numb"><</li>
+								<li class="sbr-bottom_nav-numb-1">1</li>
+								<li class="sbr-bottom_nav-numb">2</li>
+								<li class="sbr-bottom_nav-numb">3</li>
+								<li class="sbr-bottom_nav-numb">4</li>
+								<li class="sbr-bottom_nav-numb">5</li>
+								<li class="sbr-bottom_nav-numb">6</li>
+								<li class="sbr-bottom_nav-numb">. . .</li>
+								<li class="bottom_nav-tran" style="display: none;">》</li>
+								<li class="sbr-bottom_nav-numb">66</li>
+								<li class="sbr-bottom_nav-numb">></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<footer class ="footer">
+		<div class="footer-body">
+			<div class="footer-body-first">
+				<div class="fbf-product">
+					<label class="fbf-title">我们的产品</label>
+					<div class="fbf-content">
+						<ul class="fbf-content-ul_1">
+							<li class="fbf-content-text"><span>旅行团</span></li>
+							<li class="fbf-content-text"><span>自由行</span></li>
+							<li class="fbf-content-text"><span>酒店</span></li>
+							<li class="fbf-content-text"><span>机票</span></li>
+						</ul>
+						<ul class="fbf-content-ul_2">	
+							<li class="fbf-content-text"><span>邮轮</span></li>
+							<li class="fbf-content-text"><span>吃喝玩乐·门票</span></li>
+							<li class="fbf-content-text"><span>独立包团</span></li>
+						</ul>
+						<ul class="fbf-content-ul_3">
+							<li class="fbf-content-text"><span>旅行团报名及责任细则</span></li>
+						</ul>	
+					</div>				
+				</div>
+				<hr class="footer-body-hr1">
+				<div class="fbf-about">
+					<label class="fbf-title">关于我们</label>
+					<div class="fbf-content">
+						<ul class="fbf-content-ul_1">
+							<li class="fbf-content-text"><span>公司背景</span></li>
+							<li class="fbf-content-text"><span>最新动向</span></li>
+							<li class="fbf-content-text"><span>新闻发布</span></li>
+						</ul>
+						<ul class="fbf-content-ul_2">	
+							<li class="fbf-content-text"><span>分行地址及电话</span></li>
+							<li class="fbf-content-text"><span>人才招聘及发展</span></li>
+						</ul>
+					</div>	
+				</div>
+				<hr class="footer-body-hr1">
+				<div class="fbf-tourist_tribes">
+					<label class="fbf-title">旅游部落</label>
+					<div class="fbf-content">
+						<ul class="fbf-content-ul_1">
+							<li class="fbf-content-text"><span>旅游情报</span></li>
+							<li class="fbf-content-text"><span>精Pick游记</span></li>
+							<li class="fbf-content-text"><span>目的地资讯</span></li>
+						</ul>
+					</div>
+				</div>
+				<hr class="footer-body-hr1">
+				<div class="fbf-tourism_services">
+					<label class="fbf-title">旅游服务</label>
+					<div class="fbf-content">
+						<ul class="fbf-content-ul_1">
+							<li class="fbf-content-text"><span>旅游须知</span></li>
+							<li class="fbf-content-text"><span>旅游保险</span></li>
+							<li class="fbf-content-text"><span>旅游礼卷</span></li>
+							<li class="fbf-content-text"><span>旅游短片</span></li>
+							<li class="fbf-content-text"><span>电子印花</span></li>
+						</ul>
+						<ul class="fbf-content-ul_2">	
+							<li class="fbf-content-text"><span>汇率计算</span></li>
+							<li class="fbf-content-text"><span>航班资料</span></li>
+							<li class="fbf-content-text"><span>航空公司资料</span></li>
+							<li class="fbf-content-text"><span>恶劣天气通知</span></li>
+							<li class="fbf-content-text"><span>签证及入境须知</span></li>
+						</ul>
+					</div>
+				</div>
+				<hr class="footer-body-hr1">
+				<div class="fbf-more_services">
+					<label class="fbf-title">更多服务与支援</label>
+					<div class="fbf-content">
+						<ul class="fbf-content-ul_1">
+							<li class="fbf-content-text"><span>会员登入</span></li>
+							<li class="fbf-content-text"><span>会员登记</span></li>
+							<li class="fbf-content-text"><span>会员资讯专业</span></li>
+							<li class="fbf-content-text"><span>顾客意见及查询</span></li>
+						</ul>
+					</div>
+				</div>
+				<hr class="footer-body-hr1">
+				<div class="fbf-app_download">
+					<label class="fbf-title">**旅游APP</label>
+					<img src="img/qr_code.jpg" title="扫码下载**旅游APP" class="fbf-app_download-qr_code-img">
+				</div>
+			</div>
+			<hr class="footer-body-hr2"/>
+			<div class="footer-body-second">
+				<div class="fbs-left">
+					<label class="fbs-left-title">合作伙伴</label>
+					<img src="img/ctrip_logo.png" title="携程旅游">
+					<img src="img/ezTrave_logo.png" title="易游网">
+				</div>
+				<div class="fbs-right">
+					<label class="fbs-right-title">关注我们</label>
+					<img src="img/Youtobe_logo.jpg" title="Youtobe">
+					<img src="img/Facebook_logo.jpg" title="Facebook">
+				</div>
+			</div>
+			<div class="footer-body-third">
+				<label class="fbt-slogan">**旅游为你提供酒店预定,酒店价格查询服务,各种酒店优惠,拥有全港最全的酒店即时预订系统,海量酒店任你选,网上预订酒店首选**旅游。</label>
+				<div class="fbt-part_1">
+					<label class="fbt-part-title">国内热门酒店</label>
+					<div class="fbt-part-list">
+						<a href="" class="fbt-content">北京酒店</a>
+						<a href="" class="fbt-content">上海酒店</a>
+						<a href="" class="fbt-content">天津酒店</a>
+						<a href="" class="fbt-content">重庆酒店</a>
+						<a href="" class="fbt-content">香港酒店</a>
+						<a href="" class="fbt-content">澳门酒店</a>
+						<a href="" class="fbt-content">杭州酒店</a>
+						<a href="" class="fbt-content">广州酒店</a>
+						<a href="" class="fbt-content">深圳酒店</a>
+						<a href="" class="fbt-content">南京酒店</a>
+						<a href="" class="fbt-content">成都酒店</a>
+						<a href="" class="fbt-content">苏州酒店</a>
+						<a href="" class="fbt-content">西安酒店</a>
+						<a href="" class="fbt-content">大连酒店</a>
+						<a href="" class="fbt-content">青岛酒店</a>
+						<a href="" class="fbt-content">武汉酒店</a>
+						<a href="" class="fbt-content">宁波酒店</a>
+						<a href="" class="fbt-content">三亚酒店</a>
+						<a href="" class="fbt-content">厦门酒店</a>
+						<a href="" class="fbt-content">沈阳酒店</a>
+						<a href="" class="fbt-content">济南酒店</a>
+						<a href="" class="fbt-content">长沙酒店</a>
+						<a href="" class="fbt-content">郑州酒店</a>
+						<a href="" class="fbt-content">无锡酒店</a>
+						<a href="" class="fbt-content">昆明酒店</a>
+						<a href="" class="fbt-content">东莞酒店</a>
+						<a href="" class="fbt-content">珠海酒店</a>
+						<a href="" class="fbt-content">太原酒店</a>
+						<a href="" class="fbt-content">福州酒店</a>
+						<a href="" class="fbt-content">桂林酒店</a>
+						<a href="" class="fbt-content">丽江酒店</a>
+						<a href="" class="fbt-content">黄山酒店</a>
+						<a href="" class="fbt-content">合肥酒店</a>
+						<a href="" class="fbt-content">南昌酒店</a>
+						<a href="" class="fbt-content">长春酒店</a>
+						<a href="" class="fbt-content">常州酒店</a>
+						<a href="" class="fbt-content">阳朔酒店</a>
+						<a href="" class="fbt-content">南宁酒店</a>
+						<a href="" class="fbt-content">海口酒店</a>
+						<a href="" class="fbt-content">温州酒店</a>
+						<a href="" class="fbt-content">舟山酒店</a>
+						<a href="" class="fbt-content">佛山酒店</a>
+						<a href="" class="fbt-content">绍兴酒店</a>
+						<a href="" class="fbt-content">义乌酒店</a>
+						<a href="" class="fbt-content">扬州酒店</a>
+						<a href="" class="fbt-content">贵阳酒店</a>
+						<a href="" class="fbt-content">九寨沟酒店</a>
+						<a href="" class="fbt-content">石家庄酒店</a>
+						<a href="" class="fbt-content">哈尔滨酒店</a>
+					</div>
+				</div>
+				<div class="fbt-part_2">
+					<label class="fbt-part-title">海外热门酒店</label>
+					<div class="fbt-part-list">
+						<a href="" class="fbt-content">台北酒店</a>
+						<a href="" class="fbt-content">台中酒店</a>
+						<a href="" class="fbt-content">曼谷酒店</a>
+						<a href="" class="fbt-content">东京酒店</a>
+						<a href="" class="fbt-content">新加坡酒店</a>
+						<a href="" class="fbt-content">首尔酒店</a>
+						<a href="" class="fbt-content">马尔代夫酒店</a>
+						<a href="" class="fbt-content">吉隆坡酒店</a>
+						<a href="" class="fbt-content">巴厘岛酒店</a>
+						<a href="" class="fbt-content">高雄酒店</a>
+						<a href="" class="fbt-content">大阪酒店</a>
+						<a href="" class="fbt-content">垦丁酒店</a>
+						<a href="" class="fbt-content">芭提雅酒店</a>
+						<a href="" class="fbt-content">布吉岛酒店</a>
+						<a href="" class="fbt-content">苏梅岛酒店</a>
+						<a href="" class="fbt-content">名古屋酒店</a>
+						<a href="" class="fbt-content">福冈酒店</a>
+						<a href="" class="fbt-content">札幌酒店</a>
+						<a href="" class="fbt-content">清迈酒店</a>
+						<a href="" class="fbt-content">胡志明酒店</a>
+						<a href="" class="fbt-content">槟城酒店</a>
+						<a href="" class="fbt-content">马尼拉酒店</a>
+						<a href="" class="fbt-content">华欣酒店</a>
+						<a href="" class="fbt-content">河内酒店</a>
+						<a href="" class="fbt-content">釜山酒店</a>
+						<a href="" class="fbt-content">济州酒店</a>
+						<a href="" class="fbt-content">金边酒店</a>
+						<a href="" class="fbt-content">巴黎酒店</a>
+						<a href="" class="fbt-content">伦敦酒店</a>
+						<a href="" class="fbt-content">罗马酒店</a>
+						<a href="" class="fbt-content">法兰克福酒店</a>
+						<a href="" class="fbt-content">关岛酒店</a>
+						<a href="" class="fbt-content">悉尼酒店</a>
+						<a href="" class="fbt-content">墨尔本酒店</a>
+						<a href="" class="fbt-content">奥克兰酒店</a>
+						<a href="" class="fbt-content">皇后镇酒店</a>
+						<a href="" class="fbt-content">基督城酒店</a>
+						<a href="" class="fbt-content">纽约酒店</a>
+						<a href="" class="fbt-content">布里斯班酒店</a>
+						<a href="" class="fbt-content">三藩市酒店</a>
+						<a href="" class="fbt-content">洛杉矶酒店</a>
+						<a href="" class="fbt-content">温哥华酒店</a>
+						<a href="" class="fbt-content">多伦多酒店</a>
+					</div>
+				</div>
+				<div class="fbt-part_3">
+					<label class="fbt-part-title">热门酒店搜索</label>
+					<div class="fbt-part-list">
+						<a href="" class="fbt-content">博白饭店</a>
+						<a href="" class="fbt-content">葫芦岛酒店预定</a>
+						<a href="" class="fbt-content">吴川宾馆</a>
+						<a href="" class="fbt-content">汉沟镇酒店</a>
+						<a href="" class="fbt-content">宫古岛特价酒店</a>
+						<a href="" class="fbt-content">台北天成大饭店</a>
+						<a href="" class="fbt-content">香港Casa Deluxe酒店</a>
+						<a href="" class="fbt-content">香港半岛酒店</a>
+						<a href="" class="fbt-content">台北福泰桔子商务旅馆</a>
+						<a href="" class="fbt-content">华欣希尔顿度假酒店</a>
+						<a href="" class="fbt-content">曼谷华昌传统酒店</a>
+						<a href="" class="fbt-content">首尔JW万豪酒店</a>
+						<a href="" class="fbt-content">北京民族园智选假日酒店</a>
+						<a href="" class="fbt-content">普陀山瑞景大酒店</a>
+						<a href="" class="fbt-content">珠海格丽酒店公寓</a>
+					</div>
+				</div>			
+			</div>
+			<div class="footer-body-fourth">
+				<div class="footer-statement">
+					<span>本网页所显示之价格因应产品种类及出发日期而有所不同，不包括任何税项、燃油附加费、行政费、签证费、服务费（旅行团适用）及其他应缴费用</span><br/>
+					<span>Copyright © 2019 BY believer ; qq:1547833586</span>
+				</div>
+				<div class="footer-about">
+					<a href="">联系我们</a>
+					<span>|</span>
+					<a href="">网站地图</a>
+					<span>|</span>
+					<a href="">隐私政策</a>
+				</div>
+			</div>		
+		</div>
+	</footer>
+</body>
+</html>
