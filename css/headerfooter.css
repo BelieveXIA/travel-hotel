@@ -4,17 +4,17 @@
 	height: 70px;
 	background-color: #fff;
 }
-.nav-left ul{		
-	padding-left: 6%;
-	padding-top: 15px;
-	margin-left: 10px;
+.nav-left{
+	margin-left:100px;		
+	margin-top: 15px;
 }
 .nav-left li{
-	list-style: none;
-	margin-left: 8px;
-	line-height: 50px;
-	float:left;
+	line-height: 50px;	
 }
+
+
+
+
 .nav-body {	
 	margin-left: 100px;
 	float:left;
