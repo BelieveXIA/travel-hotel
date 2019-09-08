@@ -1,51 +1,62 @@
 /*公共头部样式*/
 .header{
+	position: relative;
 	width: 100%;
 	height: 70px;
-	background-color: #fff;
+	background-color: #8C8CFC;
+	display: flex;
 }
-.nav-left{
+.header .headernav-left{
+	display: flex;
+	width: 280px;
+	height: 50px;
+	line-height: 50px;
 	margin-left:100px;		
-	margin-top: 15px;
+	margin-top: 10px;
 }
-.nav-left li{
-	line-height: 50px;	
+.header .headernav-body{
+	position: absolute;
+	display: flex;
+	width: 800px;
+	height: 50px;
+	overflow: hidden;
+	margin-left: 500px;
 }
 
-
-
-
-.nav-body {	
-	margin-left: 100px;
-	float:left;
-}
-.nav-body a{
-	text-decoration: none;
+.header .headernav-body li a{	
+	width: 100px;
+	height: 20px;
 	font-style: bold;
 	font-size: 20px;
-	color: #666;	
+	color: #333;
+	text-align: center;
+	margin-top: 25px;
+	overflow: hidden;
 }
-.nav-body a:hover{
+
+.headernav-body a:hover{
 	color: blue;
 }
-.nav-body li{	
+.headernav-body li{	
 	list-style: none;
 	line-height: 50px;
 	margin-left: 10px;
 	float:left;
 
 }
-.nav-right{
-	float: left;
-	margin-left: 20px;
+
+
+.headernav-right{
+	float: right;
+
 	cursor: pointer;
 }
-.nav-right li{
+.headernav-right li{
 	float: left;
 	list-style: none;
 	margin: 8px 5px;
 }
-.nav-right .nav-right-body li .hr_nav{
+.headernav-right .headernav-right-body li .hr_nav{
 	margin-top: 5px;
 }
 
