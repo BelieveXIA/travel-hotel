@@ -3,7 +3,7 @@
 	position: relative;
 	width: 100%;
 	height: 70px;
-	background-color: #8C8CFC;
+	font-size: 17px;
 	display: flex;
 }
 .header .headernav-left{
@@ -13,14 +13,15 @@
 	line-height: 50px;
 	margin-left:100px;		
 	margin-top: 10px;
+	overflow: hidden;
 }
 .header .headernav-body{
 	position: absolute;
 	display: flex;
 	width: 800px;
-	height: 50px;
+	height: 70px;
+	margin-left: 400px;
 	overflow: hidden;
-	margin-left: 500px;
 }
 
 .header .headernav-body li a{	
@@ -31,71 +32,61 @@
 	color: #333;
 	text-align: center;
 	margin-top: 25px;
-	overflow: hidden;
 }
-
-.headernav-body a:hover{
+.header .headernav-body a:hover{
 	color: blue;
 }
-.headernav-body li{	
-	list-style: none;
-	line-height: 50px;
-	margin-left: 10px;
-	float:left;
-
-}
 
 
-.headernav-right{
-	float: right;
-
-	cursor: pointer;
+.header .headernav-right{
+	position: absolute;
+	display: flex;
+	margin-left: 1320px;
+	margin-top:25px;	
+	overflow: visible;
 }
-.headernav-right li{
-	float: left;
-	list-style: none;
-	margin: 8px 5px;
-}
-.headernav-right .headernav-right-body li .hr_nav{
-	margin-top: 5px;
+.header .headernav-right li{
+	margin-right: 10px;
 }
 
-.btn-login .btn-login-nav{
-	font-size: 16px;
-	margin-top: 5px;
-}
-.nav-right-body .account-panel{
+.btn-login .account-panel{
+	position: absolute;
 	padding: 0;
 	display: none;
-	position: absolute;
+	z-index:1;	
 	background-color: #f3f7f9; 
 }
-.nav-right-body .account-panel a{
-	text-decoration: none;
-	width: 25px;
-	font-size: 15px;
+.btn-login .account-panel a{
+	width: 45px;
+	font-size: 16px;
 	color: black;
-	z-index:999;	
+	text-align: center;
+	padding-top: 4px;
+	padding-left: 5px;
+	padding-bottom: 5px;
 }
-.nav-right-body .btn-login:hover .account-panel{
+.btn-login:hover .account-panel{
 	display: block;
 }
-.nav-right-body .account-panel li:hover > a {
-	background-color: #9cf;
+.btn-login .account-panel li:hover > a {
+	background-color: #99ccff;
 }
-.nav-right-body .contact{
+.rel-me .contact{
+	position: absolute;
 	padding: 0;
 	display: none;
-	z-index:999;
-	position: absolute;
-	background: #fff;    
+	z-index:1;
+	background-color: #f3f7f9;
+	width: 135px;    
 }
-.nav-right-body .contact span{
+.rel-me .contact span{
 	font-size: 15px;
+	padding-left: 5px;
 }
-.nav-right-body .rel-me:hover .contact{
+.rel-me:hover .contact{
 	display: block;
 }
+
 
 .header-body-hr{
 	width: 100%;
