@@ -1,4 +1,7 @@
 /*公共头部样式*/
+
+
+
 .header{
 	position: relative;
 	width: 100%;
@@ -86,8 +89,12 @@
 .rel-me:hover .contact{
 	display: block;
 }
-
-
+/*divbody部分*/
+.divbody{
+	width: 100%;
+	height: 800px;
+	background-color: #83EFB5;
+}
 .header-body-hr{
 	width: 100%;
 	height: 1px;
