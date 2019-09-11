@@ -1,12 +1,17 @@
+/*隐藏横（底部）滚动条*/
+body{
+	width: 100%;
+	height: auto;
+	position: relative;
+	overflow-x:hidden;
+}
 /*公共头部样式*/
-
-
-
 .header{
 	position: relative;
 	width: 100%;
 	height: 70px;
 	font-size: 17px;
+	margin: 0 auto;
 	display: flex;
 }
 .header .headernav-left{
@@ -39,8 +44,6 @@
 .header .headernav-body a:hover{
 	color: blue;
 }
-
-
 .header .headernav-right{
 	position: absolute;
 	display: flex;
@@ -51,7 +54,6 @@
 .header .headernav-right li{
 	margin-right: 10px;
 }
-
 .btn-login .account-panel{
 	position: absolute;
 	padding: 0;
@@ -89,7 +91,8 @@
 .rel-me:hover .contact{
 	display: block;
 }
-/*divbody部分*/
+
+/*divbody部分,预留假设主体位置*/
 .divbody{
 	width: 100%;
 	height: 800px;
@@ -104,214 +107,44 @@
 
 /*公共底部样式*/
 .footer{
-	float: left;
 	width: 100%;
 	height: 700px;
 	border: solid 0.5px #ccc;
 	position: relative;
 	background-color: #F1F5F8;
+	overflow: hidden;
 }
-.footer-body{
-	width: 80%;
-	height: 100%;
-	margin-left: 10%;
-	position: absolute;
-}
-.footer-body-first{
-	width: 100%;
+.footer-firstbody{
+	width: 960px;
 	height: 160px;
+	background-color: #ccc;
+	position: relative;
+	margin: 0 auto;
 	margin-top: 20px;
-	float: left;
+	display: flex;
+	overflow: hidden;
 }
-.footer-body-hr1{
-	float: left;
+.footer-hr1{
 	height: 100%;
 	border: solid 0.5px #ccc;
 }
-.fbf-product{
-	float: left;
+.footer-firstbody .firstbody-item{
 	width: 180px;
-	height: 100%;
+	height: 160px;
+	overflow: hidden;
 }
-.fbf-about{
-	float: left;
-	width: 220px;
-	height: 100%;
-	margin-left: 25px;
-}
-.fbf-tourist_tribes{
-	float: left;
-	width: 100px;
-	height: 100%;
-	margin-left: 25px;
-}
-.fbf-tourism_services{
-	float: left;
-	width: 220px;
-	height: 100%;
-	margin-left: 25px;
-}
-.fbf-more_services{
-	float: left;
-	width: 130px;
-	height: 100%;
-	margin-left: 25px;
-}
-.fbf-app_download{
-	float: left;
-	width: 130px;
-	height: 100%;
-	margin-left: 25px;
-}
-.fbf-title{
-	font-size: 14px;
-	font-weight: bold;
-	margin-top: 15px;
-}
-.fbf-content{
-	float: left;
+.footer-firstbody .firstbody-item .fbf-content{
 	width: 100%;
-	height: 100%;
-	margin-top: 12px;
-}
-.fbf-content ul{
-	list-style: none;	
-}
-.fbf-content-ul_1{
-	float: left;
-}
-.fbf-content-ul_2{
-	float: right;
-	margin-right: 35px;
-}
-.fbf-content-ul_3{
-	float: left;
-}
-.fbf-content-text{
-	font-size: 14px;
-	color: #06c;
-	margin-top: 5px;
-}
-.fbf-content ul li:hover{
-	cursor: pointer;
-	color: black;
-}
-.fbf-app_download-qr_code-img{
-	margin-top: 20px;
-}
-.footer-body-hr2{
-	float: left;
-	width: 100%;
-	border: solid 0.5px #ccc;
-	margin-top: 20px;
-}
-.footer-body-second{
-	float: left;
-	width: 100%;
-	height: 100px;
-}
-.fbs-left{
-	float: left;
-	margin:30px;
-}
-.fbs-right{
-	float: right;
-	margin:30px;
-}
-.fbs-left-title{
-	float: left;
+	height: auto;
 	font-size: 13px;
-	font-weight: bold;
-	padding-top: 10px;
-	padding-right: 10px;
-	color: #666;
+	padding-left: 10px;
+	color: #333;
 }
-.fbs-right-title{
-	float: left;
-	font-size: 13px;
-	font-weight: bold;
-	padding-top: 10px;
-	padding-right: 10px;
-	color: #666;
-}
-.footer-body-third{
-	float: left;
-	width: 99.8%;
-	height: 330px;
-	border: solid 1.5px #ccc;
-	border-radius: 3px;
-	background-color: #fff;
-}
-.fbt-slogan{
-	float: left;
-	font-size: 13px;
-	font-weight: bold;
-	margin-top: 15px;
-	margin-left: 20px;
-	color: #666;
-}
-.fbt-part_1,.fbt-part_2,.fbt-part_3{
-	float: left;
-	width: 100%;
-	height: 80px;
-	margin-top: 15px;
-	margin-left: 20px;
-}
-.fbt-part-title{
-	float: left;
-	font-size: 13px;
-	font-weight: bold;
-	color: #666;
-}
-.fbt-part-list{
-	float: left;
-	width: 91%;
-	margin-left: 15px;
-}
-.fbt-part-list a{
-	float: left;
+.footer-firstbody .firstbody-item .fbf-content ul{
 	width: 80px;
-	height: 19px;
-	margin-bottom: 3px;
+	height: auto;
 }
-.fbt-content{
-	text-decoration: none;
-	font-size: 13px;
-	color: #999;
+.footer-firstbody .firstbody-item .fbf-content ul li{
+	display: flex;
 }
-.fbt-part_3 .fbt-part-list a{
-	float: left;
-	width: 160px;
-	height: 19px;
-	margin-bottom: 3px;
-}
-.fbt-part-list a:hover{
-	cursor: pointer;
-	text-decoration: underline;
-}
-.footer-body-fourth{
-	float: left;
-	width: 100%;
-	height: 30px;
-	margin-top: 20px;
-}
-.footer-statement{
-	float: left;
-	font-size: 12px;
-	margin-bottom: 3px;
-}
-.footer-about{
-	float: right;
-}
-.footer-about a{
-	font-size: 12px;
-	color: black;
-	text-decoration: none;
-}
-.footer-about a:hover{
-	cursor: pointer;
-	text-decoration: underline;
-}
-
-
 
