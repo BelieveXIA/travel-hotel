@@ -15,6 +15,7 @@ ul,ol,li{
 a{
     text-decoration:none;
     display:block;
+    color: blue;
 }
 /*img标签要清除border以及display设为block设置为块级元素，默认为display:inline;存在下边线多出4px状况，所以一般设为block*/
 img{
