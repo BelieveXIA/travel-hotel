@@ -108,7 +108,7 @@ body{
 /*公共底部样式*/
 .footer{
 	width: 100%;
-	height: 700px;
+	height: auto;
 	border: solid 0.5px #ccc;
 	position: relative;
 	background-color: #F1F5F8;
@@ -185,28 +185,142 @@ body{
 }
 .footer-body-second{
 	width: 960px;
-	height: 160px;
+	height: 100px;
 	position: relative;
 	margin: 20px auto;
 	overflow: hidden; 
 }
 .footer-body-second .fbs-left{
-	width: 400px;
+	width: 50%;
 	height: 60px;
-	background-color: blue;
 	position: relative;
 	float: left;
 }
 .footer-body-second .fbs-right{
-	width: 400px;
+	width: 50%;
 	height: 60px;
-	background-color: blue;
 	position: relative;
 	float: right;
 }
-.footer-body-second .fbs-right img{
-	/*position: absolute;
-	top: 0px;
-	right:40px;*/
+.footer-body-second .fbs-left li{
+	float: left;
+	margin: 15px 5px 0px 5px;
+}
+.footer-body-second .fbs-right li{
 	float: right;
+	margin: 15px 5px 0px 5px;
+}
+.footer-body-third{
+	width: 960px;
+	height: 500px;
+	background-color: #fff;
+	border: 0.5px solid #999;
+	margin: 0 auto;
+	position: relative;
+}
+.footer-body-third .fbt-slogan{
+	position: relative;
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+	color: #666;
+	margin: 15px 35px;
+}
+.footer-body-third .fbt-part-1_2{
+	width: 100%;
+	height: 150px;
+	position: relative;
+}
+.footer-body-third .fbt-part-1_2 .fbt-part-title{
+	position: absolute;
+	top:10px;
+	left: 10px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #666;
+}
+.footer-body-third .fbt-part-1_2 .fbt-part-list{
+	width: 800px;
+	height: 150px;
+	position: absolute;
+	top: 0px;
+	left: 120px;
+	padding-top: 10px;
+}
+.footer-body-third .fbt-part-1_2 .fbt-part-list a{
+	float: left;
+	width: 80px;
+	height: 19px;
+	font-size: 13px;
+	color: #666;
+	margin-right: 8px;
+	margin-bottom: 3px;
+}
+.footer-body-third .fbt-part-1_2 .fbt-part-list a:hover{
+	color:#333;
+	text-decoration: underline;
+}	
+.footer-body-third .fbt-part_3{
+	width: 100%;
+	height: 150px;
+	position: relative;
+}
+.footer-body-third .fbt-part_3 .fbt-part-title{
+	position: absolute;
+	top:10px;
+	left: 10px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #666;
+}
+.footer-body-third .fbt-part_3 .fbt-part-list{
+	width: 800px;
+	height: 150px;
+	position: absolute;
+	top: 0px;
+	left: 120px;
+	padding-top: 10px;
+}
+.footer-body-third .fbt-part_3 .fbt-part-list a{
+	float: left;
+	width: 160px;
+	height: 19px;
+	font-size: 13px;
+	color: #666;
+	margin-right: 8px;
+	margin-bottom: 3px;
+}
+.footer-body-third .fbt-part_3 .fbt-part-list a:hover{
+	color:#333;
+	text-decoration: underline;
+}		
+.footer-body-fourth{
+	width: 960px;
+	height: 70px;
+	position: relative;
+	margin:0 auto;
+	font-size:13px;
+	color: #333;
+}
+.footer-body-fourth .footer-statement{
+	width: 600px;
+	height: auto;
+	position: absolute;
+	top: 5px;
+	left:15px;
+}
+.footer-body-fourth .footer-about{
+	width: 200px;
+	height: auto;
+	position: absolute;
+	top: 5px;
+	right:15px;
+	display: flex;
+}
+.footer-body-fourth .footer-about a,span{
+	color: #666;
+	margin-right: 5px;
+}
+.footer-body-fourth .footer-about a:hover{
+	color: #000;
 }
