@@ -1,78 +1,63 @@
 /*主页index的主体样式*/
-.body{
-	width: 100%;
-	margin: 0px auto;
-	position: relative;
+.index-body{
+	width: 1520px;
+	height: 1200px;
+	margin-top: 5px;
 }
 .body-content{
-	width: 80%;
+	width: 1200px;
 	margin:0 auto;
+	position: relative;
+	overflow: hidden;
 }
 .first-body{
-	width: 100%;
-	height: 500px;
-	margin: 0px auto;
+	width: 1200px;
+	height: 600px;
 	position: relative;
+	display: flex;
 }
-.first-body-side{
-	width: 20%;
+.first-body .first-body-side{
+	width: 240px;
 	height: auto;
-	padding: 0px;
-	margin-top: 5px;
+	padding-top: 15px;
 	color: #000;
-	float: left;
 	background-color: #f3f7f9;
 }
-.first-body-side ul{
-	width: 100%;
-	padding:0px;
-	padding-top: 15px;
-	list-style: none;
-}
-.first-body-side li{
-	padding: 7.5px;
-	padding-left: 15px;
+.first-body .first-body-side li{
+	padding: 7px 15px;
 	font-size: 14px;
-	line-height: 18px;
+	line-height: 20px;
+	display: flex;
 }
-.first-body-side li a{
-	color: black;
-	text-decoration: none;
+.first-body .first-body-side li a{
+	color: #000000;
 }
-.first-body-side li:hover{
-	background: #9cf;
+.first-body .first-body-side li a:hover{
+	background: #90F8F3;
 }
-.first-body-side-item a:hover{
+.first-body .first-body-side-item a:hover{
 	cursor: pointer;
 	color: #f16522;
 }
-
-.first-body-center{
-	width: 590px;
+.first-body .first-body-center{
+	width: 600px;
+	height: auto;
 	margin-left: 10px;
-	margin-top: 5px;
-	float: left;
 	position: relative;
 }
-.fb-center-banner{
-	width: 100%;
-	height: 180px;
-	margin:  0 auto;
-	float: left;   
+.first-body .fb-center-banner{
+	width: 600px;
+	height: 280px;
 	overflow: hidden;  
 }
-.fb-center-banner ul{
+.first-body .fb-center-banner ul{
 	width: 3000px;
-	height: 1200px;
+	height: 280px;
 	animation: lunbo 20s infinite linear;
 }
-.fb-center-banner ul li{
-	list-style: none;
-	float: left;    
-}
-.fb-center-banner ul li img{
-	width: 100%;
-	height: 180px;
+.first-body .fb-center-banner ul li{
+	float: left;
+	opacity: 0.7;
 }
 @keyframes lunbo{
 	0%{
@@ -106,50 +91,48 @@
 		transform: translateX(-2400px);
 	}
 }
-.fb-center-banner:hover ul{
+.first-body .fb-center-banner:hover ul{
 	animation-play-state: paused;
 }
-.fb-center-banner:hover ul li{
-	opacity: 0.5;
-}
-.fb-center-banner ul li:hover{
+.first-body .fb-center-banner ul li:hover{
 	opacity: 1;
 }
-.fb-center-bottom{
-	width: 100%;
-	position: absolute;
-	margin-top: 183px;
-}
-.fb-center-bottom li{
-	list-style: none;
-	float: left;
-	margin-top: 5px;
-	margin-right: 3px;
-	
-}
-.fb-center-bottom li img{
-	width: 100%;
+.first-body .fb-center-bottom{
+	width: 600px;
 	height: auto;
+	position: relative;
+	margin-top: 8px;
+}
+.first-body .fb-center-bottom ul li{
+	float: left;
+	margin-left: 6px;
+}
+.first-body .fb-center-bottom .ad-img{
+	width: 596px;
+	height: 125px;
+	margin-top: 8px;
+	margin-left: 2px;
 }
 
+
+
 .first-body-search{
-	width:27%;
-	height: 440px;
-	float: right;
-	margin-top:5px;
+	width:340px;
+	height: 400px;
 	border: 0;
+	margin-left: 10px;
 	background-color: #f3f7f9;
 }
-.fb-search .fb-search-title {
+.fb-search-title{
 	padding: 8px 20px;
 	color: #fff;
 	background-color: #69c;
 	font-size: 20px;
 	font-weight: bold;
 }
-.fb-search .fb-search-content {
+.fb-search-content {
 	background-color: #f3f7f9;
-	padding: 15px 20px 20px 20px;
+	padding: 15px 20px 20px;
 }
 .fbsc-form-destination-title{
 	font-size: 18px;
@@ -158,9 +141,14 @@
 	margin-top: 4px;
 }
 
+
+.fbs-content-form-booking{
+	margin-top: 8px;
+}
 .date-title span{
 	font-size: 18px;
 	padding-left: 50px;
+	
 }
 .dt-come-time,.dt-out-time{
 	float: left;
