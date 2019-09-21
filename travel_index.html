@@ -169,7 +169,7 @@
 										<div class="dsh-title">
 											<p>支持中文/英文输入</p>
 										</div>
-										<ul id="select_value">
+										<ul id="select_value clearfloat">
 											<li>
 												<div class="dsh-title">亚洲</div>
 												<div class="dsh-title-content">
@@ -219,108 +219,92 @@
 									</div>
 								</div>
 							</div>
-							<div class="fbs-content-form-booking">
-								<div class="fbsc-form-bookingtime">
-									<p class="date-title">
-										<span class="dt-come">入住日期</span>
-										<span class="dt-out">退房日期</span>
-									</p>
-									<div class="date-picker">
-										<div class="dt-come-time">
-											<span class="">07月28日</span>
-											<input type="submit" class="checkin-btn" value=""/>
-										</div>
-										<div class="dt-out-time">
-											<span class="">07月30日</span>
-											<input type="submit" class="checkout-btn" value=""/>
-										</div>
+							<div class="fbsc-form-bookingtime clearfloat">
+								<p class="date-title">
+									<span class="dt-come">入住日期</span>
+									<span class="dt-out">退房日期</span>
+								</p>
+								<div class="date-picker ">
+									<div class="dt-come-time ">
+										<span class="">07月28日</span>
+										<input type="submit" class="checkin-btn" value=""/>
+									</div>
+									<div class="dt-out-time ">
+										<span class="">07月30日</span>
+										<input type="submit" class="checkout-btn" value=""/>
 									</div>
 								</div>
 							</div>
-							<div class="fbs-content-form-live_numb">
+							<div class="fbsc-form-live_numb clearfloat">
 								<label class="fbsc-form-live_numb-title">每房入住人数</label>
-								<div class="fbsc-form-live_numb-sl">
-									<select>
-										<option value="1人"selected="selected">1人</option>
-										<option value="2人">2人</option>
-										<option value="3人">3人</option>
-										<option value="4人">4人</option>
-										<option value="5人">5人</option>
-										<option value="6人">6人</option>
-										<option value="7人">7人</option>
-										<option value="8人">8人</option>
-									</select>
-								</div>
+								<select class="fbsc-form-live_numb-select">
+									<option value="1人">1人</option>
+									<option value="2人"selected="selected">2人</option>
+									<option value="3人">3人</option>
+									<option value="4人">4人</option>
+									<option value="5人">5人</option>
+									<option value="6人">6人</option>
+									<option value="7人">7人</option>
+									<option value="8人">8人</option>
+								</select>
 							</div>
-							<div class="fbs-content-form-search_key">
+							<div class="fbsc-form-search_key clearfloat">
 								<label class="fbsc-form-search_key-title">关键字</label>
-								<div class="fbsc-form-search_key-input">
-									<input type="text" autocomplete="off" placeholder="酒店名或者地标名" class="search_key-input">
-								</div>
+								<input type="text" autocomplete="off" placeholder="酒店名或者地标名" class="search_key-input">
 							</div>
-							<div class="fbs-content-form-high_search">
-								<div class="fbsc-form-high_search-body">
-									<a class="high_search-btn" id="hs_btn">高级搜索（点击展开）</a>
-									<div class="high_search-hide" id="hs_hide" style="display: none;">
-										<div class="hsh-price">
-											<p class="hsh-price-title">价格范围：</p>
-											<div class="hsh-price-content">
-												<div role="group" class="hsh-price-checkbox-group">
-													<label role="checkbox">
-														<input type="checkbox" class="checkbox_input" value="0|400">
-														<span class="checkbox_content">HKD 400 以下</span>
-													</label>
-													<label role="checkbox">
-														<input type="checkbox" class="checkbox_input" value="400|800">
-														<span class="checkbox_content">HKD 400~800</span>
-													</label>
-													<label role="checkbox">
-														<input type="checkbox" class="checkbox_input" value="800|1000">
-														<span class="checkbox_content">HKD 800~1000</span>
-													</label>
-													<label role="checkbox">
-														<input type="checkbox" class="checkbox_input" value="1000|1500">
-														<span class="checkbox_content">HKD 1000~1500</span>
-													</label>
-													<label role="checkbox">
-														<input type="checkbox" class="checkbox_input" value="1500|2000">
-														<span class="checkbox_content">HKD 1500~2000</span>
-													</label>
-													<label role="checkbox">
-														<input type="checkbox" class="checkbox_input" value="2000|0">
-														<span class="checkbox_content">HKD 2000 以上</span>
-													</label>
-												</div>
-											</div>
-										</div>
-										<div class="hsh-star">
-											<p class="hsh-star-title">星级酒店：</p>
-											<div class="hsh-star-content">
-												<div role="group" class="hsh-star-checkbox-group">
-													<label role="checkbox">
-														<input type="checkbox" class="checkbox_input" value="0,1,2">
-														<span class="checkbox_content">2星及以下</span>
-													</label>
-													<label role="checkbox">
-														<input type="checkbox" class="checkbox_input" value="3">
-														<span class="checkbox_content">3星</span>
-													</label>
-													<label role="checkbox">
-														<input type="checkbox" class="checkbox_input" value="4">
-														<span class="checkbox_content">4星</span>
-													</label>
-													<label role="checkbox">
-														<input type="checkbox" class="checkbox_input" value="5">
-														<span class="checkbox_content">5星</span>
-													</label>
-												</div>
-											</div>
-										</div>
+							<div class="fbsc-form-high_search">
+								<a class="high_search-btn" id="hs_btn">高级搜索（点击展开）</a>
+								<div class="high_search-hide" id="hs_hide" style="display: none;">
+									<p class="hsh-price-title">价格范围：</p>
+									<div role="group" class="hsh-price-checkbox-group clearfloat">
+										<label role="checkbox">
+											<input type="checkbox" class="checkbox_input" value="0|400">
+											<span class="checkbox_content">HKD 400 以下</span>
+										</label>
+										<label role="checkbox">
+											<input type="checkbox" class="checkbox_input" value="400|800">
+											<span class="checkbox_content">HKD 400~800</span>
+										</label>
+										<label role="checkbox">
+											<input type="checkbox" class="checkbox_input" value="800|1000">
+											<span class="checkbox_content">HKD 800~1000</span>
+										</label>
+										<label role="checkbox">
+											<input type="checkbox" class="checkbox_input" value="1000|1500">
+											<span class="checkbox_content">HKD 1000~1500</span>
+										</label>
+										<label role="checkbox">
+											<input type="checkbox" class="checkbox_input" value="1500|2000">
+											<span class="checkbox_content">HKD 1500~2000</span>
+										</label>
+										<label role="checkbox">
+											<input type="checkbox" class="checkbox_input" value="2000|0">
+											<span class="checkbox_content">HKD 2000 以上</span>
+										</label>
+									</div>
+									<p class="hsh-star-title">星级酒店：</p>
+									<div role="group" class="hsh-star-checkbox-group clearfloat">
+										<label role="checkbox">
+											<input type="checkbox" class="checkbox_input" value="0,1,2">
+											<span class="checkbox_content">2星及以下</span>
+										</label>
+										<label role="checkbox">
+											<input type="checkbox" class="checkbox_input" value="3">
+											<span class="checkbox_content">3星</span>
+										</label>
+										<label role="checkbox">
+											<input type="checkbox" class="checkbox_input" value="4">
+											<span class="checkbox_content">4星</span>
+										</label>
+										<label role="checkbox">
+											<input type="checkbox" class="checkbox_input" value="5">
+											<span class="checkbox_content">5星</span>
+										</label>
 									</div>
 								</div>
 							</div>
 						</form>
-						<div class="fbs-content-secrch">
+						<div class="fbsc-secrch_submit">
 							<button class="fbsc-search-btn"><a href="hotel.html">搜寻酒店</a></button>
 						</div>
 					</div>

@@ -21,7 +21,7 @@
 	height: auto;
 	padding-top: 15px;
 	color: #000;
-	background-color: #f3f7f9;
+	background-color: #DFE8E6;
 }
 .first-body .first-body-side li{
 	padding: 7px 15px;
@@ -32,13 +32,14 @@
 .first-body .first-body-side li a{
 	color: #000000;
 }
-.first-body .first-body-side li a:hover{
+.first-body .first-body-side li:hover{
 	background: #90F8F3;
 }
-.first-body .first-body-side-item a:hover{
+.first-body .first-body-side li a:hover{
 	cursor: pointer;
-	color: #f16522;
+	color: #F65218;
 }
+
 .first-body .first-body-center{
 	width: 600px;
 	height: auto;
@@ -57,7 +58,7 @@
 }
 .first-body .fb-center-banner ul li{
 	float: left;
-	opacity: 0.7;
+	opacity: 0.8;
 }
 @keyframes lunbo{
 	0%{
@@ -121,7 +122,6 @@
 	height: 400px;
 	border: 0;
 	margin-left: 10px;
-	background-color: #f3f7f9;
 }
 .fb-search-title{
 	padding: 8px 20px;
@@ -131,172 +131,185 @@
 	font-weight: bold;
 }
 .fb-search-content {
-	background-color: #f3f7f9;
+	background-color: #DFE8E6;
 	padding: 15px 20px 20px;
 }
 .fbsc-form-destination-title{
 	font-size: 18px;
 }
 .fbsc-form-destination .fbsc-form-destination-body input{
-	margin-top: 4px;
-}
-
-
-.fbs-content-form-booking{
-	margin-top: 8px;
-}
-.date-title span{
-	font-size: 18px;
-	padding-left: 50px;
-	
-}
-.dt-come-time,.dt-out-time{
-	float: left;
-	padding-left: 40px;
+	margin-top: 6px;
 }
 .destination-input{
+	width: 100%;
+	height: 40px;
 	background-color: #fff;
-	border-radius: 4px;
 	border: 1px solid #dcdfe6;
+	border-radius: 4px;
 	box-sizing: border-box;
 	color: #606266;
 	display: inline-block;
 	font-size: inherit;
-	height: 40px;
 	line-height: 40px;
 	outline: none;
-	padding: 5px 15px;
-	width: 100%;
+	padding-left:15px;
 }
 
-.destination-select-hide {
-	background-color: #fff;
-	width: 320px;
+.destination-select-hide{
+	width: 300px;
 	height: 240px;
-	float: left;
-	z-index: 999;
+	background-color: #fff;
+	border-radius: 4px;
+	z-index: 1;
 	position: absolute;
-}
-.dsh-title{
 	font-size: 14px;
-	line-height: 0.5;
-	padding-left: 10px;
+}
+.destination-select-hide .dsh-title{
+	line-height: 14px;
+	padding:8px 10px 0 10px;
 	font-weight: bold;
 }
 .destination-select-hide ul li{
 	list-style: none;
 	margin-left: 8px;
 	margin-top: 8px;
-	float: left;
-	font-size: 16px;
-
+	display: flex;
 }
-.dsh-title-content{
+.destination-select-hide ul li .dsh-title-content{
+	width: 250px;
+	height: auto;
 	padding-top: 8px;
-
 }
 .destination-select-hide ul li a{
-	padding-right: 8px;	
-	text-decoration: none;
+	width: 50px;
+	height:16px;
 	color: black;
+	float: left;
 }
 .destination-select-hide ul li a:hover{
 	cursor: pointer;
 	background-color: #cfc;
 }
-.checkin-btn{
-	border:none;	
-	width: 18px;
-	height: 18px;
-	float: right;
-	background-repeat: no-repeat;
-	background-color: transparent;
-	background-image: url(../img/time.png);
+.fbsc-form-bookingtime{
+	margin-top: 20px;
 }
-
-.checkout-btn{
-	border:none;	
-	width: 18px;
-	height: 18px;
-	float: right;
-	background-repeat: no-repeat;
-	background-color: transparent;
-	background-image: url(../img/time.png);
+.fbsc-form-bookingtime .date-title span{
+	font-size: 18px;
+	padding-left: 50px;
+	
 }
-.fbs-content-form-live_numb{
+.fbsc-form-bookingtime .dt-come-time,.dt-out-time{
 	float: left;
-	padding-top: 15px;
-	width: 100%;
+	padding-left: 40px;
+	padding-top: 8px;
 }
-.fbs-content-form-live_numb .fbsc-form-live_numb-title{
+.fbsc-form-bookingtime .checkin-btn{
+	border:none;	
+	width: 18px;
+	height: 18px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-image: url(../img/time.png);
+}
+.fbsc-form-bookingtime .checkout-btn{
+	border:none;	
+	width: 18px;
+	height: 18px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-image: url(../img/time.png);
+}
+.fbsc-form-live_numb{
+	width: 300px;
+	height: 30px;
+	margin-top: 20px;
+}
+.fbsc-form-live_numb .fbsc-form-live_numb-title{
 	float: left;
 	font-size: 18px;
 }
-.fbsc-form-live_numb-sl select{
+.fbsc-form-live_numb .fbsc-form-live_numb-select{
 	font-size: 18px;
 	width: 160px;
 	height: 30px;
 	margin-left: 15px;
 	z-index: 1;
+	outline: none;
+	border: 0;
 }
-.fbs-content-form-search_key .fbsc-form-search_key-title{
+
+.fbsc-form-search_key .fbsc-form-search_key-title{
 	float: left;
-	padding-top: 15px;
+	padding-top: 20px;
 	font-size: 18px;
 }
-.fbs-content-form-search_key .fbsc-form-search_key-input input{
-	margin-top: 4px;
-}
-.search_key-input{
+.fbsc-form-search_key .search_key-input{
+	width: 100%;
+	height: 40px;
 	background-color: #fff;
-	border-radius: 4px;
 	border: 1px solid #dcdfe6;
+	border-radius: 4px;
 	box-sizing: border-box;
 	color: #606266;
 	display: inline-block;
 	font-size: inherit;
-	height: 40px;
 	line-height: 40px;
 	outline: none;
-	padding: 5px 15px;
-	width: 100%;
+	padding-left:15px;
+	margin-top: 6px;
 }
-.fbs-content-form-high_search{
+.fbsc-form-high_search{
 	width: 100%;
-	float: left;
+	height: auto;
+	margin-top: 10px;
 }
-.fbs-content-form-high_search .fbsc-form-high_search-body .high_search-btn{
-	float: left;
+.fbsc-form-high_search .high_search-btn{
 	font-size: 15px;
+}
+.fbsc-form-high_search .high_search-hide{
+	width: 300px;
+	height: 160px;
+	background-color: #fff;
+	border-radius: 4px;
+	position: relative;
+	font-size: 14px;
+	padding-left: 10px;
+}
+.fbsc-form-high_search .high_search-hide p{
 	padding-top: 8px;
 }
-
-.high_search-hide{
+.fbsc-form-high_search .high_search-hide label{
+	display: block;
+	width: 140px;
+	height: 16px;
 	float: left;
-	width: 86%;
-	background-color: #fff;
-	z-index: 999;
+	padding-top: 4px;
 }
-.high_search-btn:hover{
+.fbsc-form-high_search .high_search-btn:hover{
 	cursor: pointer;
 }
-.fbs-content-secrch{
-	width: 100%
+
+.fbsc-secrch_submit{
+	width: 160px;
+	height: 40px;
+	position: relative;
+	left: 50%;
+	top:20px;
+	margin-left: -80px;
+	margin-bottom: 16px;
 }
-.fbs-content-secrch .fbsc-search-btn{
-	width: 50%;
-	height: 30px;
+.fbsc-secrch_submit .fbsc-search-btn{
+	width: 160px;
+	height: 40px;
+	position: relative;
 	background-color: orange;
 	border: 0;
 	font-size: 20px;
-	padding-bottom: 5px;
-	margin:20px 0 0 75px;
+	border-radius: 5px;
 }	
-.fbsc-search-btn a{
-	color: black;
-	text-decoration: none;
+.fbsc-secrch_submit .fbsc-search-btn a{
+	color: #000000;
 }
-
 .second-body{
 	width: 68%;
 	height: 460px;
