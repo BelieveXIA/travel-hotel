@@ -5,7 +5,7 @@
 	<title>台湾台北-酒店查询</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/headerfooter.css">
-	<!-- <link rel="stylesheet" type="text/css" href="css/hotel.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/hotel.css">
 	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
 	<script src="./js/travel.js"></script>
 </head>
@@ -102,78 +102,76 @@
 		</ul>
 	</header>
 	<hr class="header-body-hr" />
-	<div class="body">
+	<div class="hotel-body">
 		<div class="first-body">
 			<div class="fb-content">
 				<form>
-					<div class="fbc-dectination">
+					<div class="fbc-dectination clearfloat">
 						<label class="fbc-dectination-title">目的地名称</label>
-						<div class="fbsc-form-destination-body">
-							<div class="destination" id="dec_input_btn">
-								<input type="" name="" autocomplete="off" placeholder="请输入目的地的名称" class="fbc-dectination-input"/>
+						<div class="destination" id="dec_input_btn">
+							<input type="" name="" autocomplete="off" placeholder="请输入目的地的名称" class="fbc-dectination-input"/>
+						</div>
+						<div class="destination-select-hide" id="dec_select" style="display: none;">
+							<div class="dsh-title">
+								<p>支持中文/英文输入</p>
 							</div>
-							<div class="destination-select-hide" id="dec_select" style="display: none;">
-								<div class="dsh-title">
-									<p>支持中文/英文输入</p>
-								</div>
-								<ul id="select_value">
-									<li>
-										<div class="dsh-title">亚洲</div>
-										<div class="dsh-title-content">
-											<a class="des" href="hotel.html">台北</a>
-											<a class="des">台中</a>
-											<a class="des">高雄</a>
-											<a class="des">垦丁</a>
-											<a class="des">东京</a>
-											<a class="des">大阪</a>
-											<a class="des">札幌</a>
-											<a class="des">冲绳县</a>
-											<a class="des">首尔</a>
-											<a class="des">新加坡</a>
-											<a class="des">吉隆坡</a>
-											<a class="des">沙巴州</a>
-											<a class="des">曼谷</a>
-											<a class="des">布吉岛</a>
-										</div>
-									</li>
-									<li>
-										<div class="dsh-title">中国</div>
-										<div class="dsh-title-content">
-											<a class="des">香港</a>
-											<a class="des">澳门</a>
-											<a class="des">深圳</a>
-											<a class="des">广州</a>
-											<a class="des">北京</a>
-											<a class="des">上海</a>
-											<a class="des">成都</a>
-										</div>
-									</li>
-									<li>
-										<div class="dsh-title">长线</div>
-										<div class="dsh-title-content">
-											<a class="des">伦敦</a>
-											<a class="des">巴黎</a>
-											<a class="des">悉尼</a>
-											<a class="des">墨尔本</a>
-											<a class="des">温哥华</a>
-											<a class="des">多伦多</a>
-											<a class="des">三蕃市</a>
-											<a class="des">洛杉矶</a>
-											<a class="des">纽约</a>
-										</div>
-									</li>
-								</ul>
-							</div>
+							<ul id="select_value clearfloat">
+								<li>
+									<div class="dsh-title">亚洲</div>
+									<div class="dsh-title-content">
+										<a href="hotel.html">台北</a>
+										<a>台中</a>
+										<a>高雄</a>
+										<a>垦丁</a>
+										<a>东京</a>
+										<a>大阪</a>
+										<a>札幌</a>
+										<a>冲绳县</a>
+										<a>首尔</a>
+										<a>新加坡</a>
+										<a>吉隆坡</a>
+										<a>沙巴州</a>
+										<a>曼谷</a>
+										<a>布吉岛</a>
+									</div>
+								</li>
+								<li>
+									<div class="dsh-title">中国</div>
+									<div class="dsh-title-content">
+										<a>香港</a>
+										<a>澳门</a>
+										<a>深圳</a>
+										<a>广州</a>
+										<a>北京</a>
+										<a>上海</a>
+										<a>成都</a>
+									</div>
+								</li>
+								<li>
+									<div class="dsh-title">长线</div>
+									<div class="dsh-title-content">
+										<a>伦敦</a>
+										<a>巴黎</a>
+										<a>悉尼</a>
+										<a>墨尔本</a>
+										<a>温哥华</a>
+										<a>多伦多</a>
+										<a>三蕃市</a>
+										<a>洛杉矶</a>
+										<a>纽约</a>
+									</div>
+								</li>
+							</ul>
 						</div>
 					</div>
-					<div class="fbc-data">
+					<div class="fbc-data clearfloat">
 						<label class="fbc-data-come">入住日期</label>
-						<label class="fbc-data-out">退房日期</label>
-						<input type="text" name="" class="fbc-data-input1" value="7月28日" />
+						<input type="text" name="" class="fbc-data-input1" value="7月28日" />	
 						<input type="text" name="" class="fbc-data-input2" value="2晚" />
+						<label class="fbc-data-out">退房日期</label>
 						<input type="text" name="" class="fbc-data-input3" value="7月30日" />
 					</div>
-					<div class="fbc-live_numb">
+					<div class="fbc-live_numb clearfloat">
 						<label class="fbc-live_numb-title">每房入住人数</label>
 						<div class="fbc-live_numb-select">
 							<select>
@@ -194,7 +192,7 @@
 		</div>
 		<div class="second-body">
 			<div class="second-body-content">
-				<div class="second-body-left">
+				<div class="second-body-left clearfloat">
 					<div class="sbl-map">
 						<img src="./img/map_show.png" class="sbl-map-bac">
 						<button class="sbl-map-show_btn">显示地图</button>
@@ -202,9 +200,7 @@
 					<div class="sbl-search">
 						<div class="sbl-search-select">
 							<label class="sbl-search-select-title">自订筛选</label>
-							<div class="sbl-search-select-panel" >
-
-							</div>
+							<div class="sbl-search-select-panel" >暂无订阅</div>
 						</div>
 						<div class="sbl-search-hot_select">
 							<label class="sec_title">热门筛选</label>
@@ -269,32 +265,32 @@
 							</div>
 						</div>
 						<hr class="second-body-left-hr">
-						<div class="sbl-search-place">
+						<div class="sbl-search-place clearfloat">
 							<label class="sec_title">位置</label>
 							<div class="place-content">
 								<label class="place-content-title">商业区</label>
-								<span class="pc-symbol">▲</span><span class="pc-symbol">▼</span>	
+								<span class="pc-symbol-a">▲</span><span class="pc-symbol">▼</span>	
 							</div>
-						</div>	
-						<hr class="second-body-left-hr">
-						<div class="place-content">
-							<label class="place-content-title">行政区</label>
-							<span class="pc-symbol-b">▲</span><span class="pc-symbol">▼</span>
-						</div>
-						<hr class="second-body-left-hr">
-						<div class="place-content">
-							<label class="place-content-title">商业区</label>
-							<span class="pc-symbol-b">▲</span><span class="pc-symbol">▼</span>
-						</div>
-						<hr class="second-body-left-hr">
-						<div class="place-content">
-							<label class="place-content-title">机场及铁路站</label>
-							<span class="pc-symbol-b">▲</span><span class="pc-symbol">▼</span>
-						</div>
-						<hr class="second-body-left-hr">
-						<div class="place-content">
-							<label class="place-content-title">地铁线</label>
-							<span class="pc-symbol-b">▲</span><span class="pc-symbol">▼</span>
+							<hr class="second-body-left-hr">
+							<div class="place-content">
+								<label class="place-content-title">行政区</label>
+								<span class="pc-symbol-a">▲</span><span class="pc-symbol">▼</span>
+							</div>
+							<hr class="second-body-left-hr">
+							<div class="place-content">
+								<label class="place-content-title">商业区</label>
+								<span class="pc-symbol-a">▲</span><span class="pc-symbol">▼</span>
+							</div>
+							<hr class="second-body-left-hr">
+							<div class="place-content">
+								<label class="place-content-title">机场及铁路站</label>
+								<span class="pc-symbol-a">▲</span><span class="pc-symbol">▼</span>
+							</div>
+							<hr class="second-body-left-hr">
+							<div class="place-content">
+								<label class="place-content-title">地铁线</label>
+								<span class="pc-symbol-a">▲</span><span class="pc-symbol">▼</span>
+							</div>
 						</div>
 						<hr class="second-body-left-hr">
 						<div class="sbl-search-facility">
@@ -358,7 +354,7 @@
 						<input type="text" autocomplete="off" readOnly="true" placeholder="暂无记录"
 						class="sbl-history-show" />
 					</div>
-					<div class="sbl-search-tenet">
+					<div class="sbl-search-tenet clearfloat">
 						<label class="sbl-search-tenet-title">**旅游</label><br/>
 						<label class="sbl-search-tenet-title">你唯一嘅网上旅游预订平台</label>
 						<div class="sbl-search-tenet-content">
