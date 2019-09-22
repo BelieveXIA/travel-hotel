@@ -1,6 +1,6 @@
 /*隐藏横（底部）滚动条*/
 body{
-	width: 100%;
+	width: 1520px;
 	height: auto;
 	position: relative;
 	overflow-x:hidden;
@@ -22,6 +22,12 @@ body{
 	margin-left:100px;		
 	margin-top: 10px;
 	overflow: hidden;
+}
+.header .headernav-left a{
+	width: 40px;
+	height: 20px;
+	color: #000;
+	cursor: pointer;
 }
 .header .headernav-body{
 	position: absolute;
@@ -55,6 +61,8 @@ body{
 	margin-right: 10px;
 }
 .btn-login .account-panel{
+	width: 60px;
+	height: 50px;
 	position: absolute;
 	padding: 0;
 	display: none;
@@ -62,27 +70,33 @@ body{
 	background-color: #f3f7f9; 
 }
 .btn-login .account-panel a{
-	width: 45px;
+	width: 60px;
+	height: 25px;
 	font-size: 16px;
-	color: black;
+	color: #000;
 	text-align: center;
-	padding-top: 4px;
-	padding-left: 5px;
-	padding-bottom: 5px;
+	line-height: 20px;
+}
+.btn-login .btn-login-nav{
+	width: 40px;
+	height: 20px;
 }
 .btn-login:hover .account-panel{
 	display: block;
 }
-.btn-login .account-panel li:hover > a {
+.btn-login .account-panel li a:hover{
 	background-color: #99ccff;
 }
 .rel-me .contact{
+	width: 135px;
+	height: auto;
 	position: absolute;
 	padding: 0;
+	margin-left: -20px;
 	display: none;
 	z-index:1;
 	background-color: #eee;
-	width: 135px;    
+	    
 }
 .rel-me .contact span{
 	font-size: 15px;
