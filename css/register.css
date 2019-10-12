@@ -1,0 +1,38 @@
+body{
+	background-color: #ccc;
+}
+.register{
+	width: 520px;
+	margin: 50px auto 0;
+	background-color: #fff;
+	border-radius: 15px;
+}
+.register .top-img{
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+}
+.register form{
+	padding: 30px 80px 0 40px;
+}
+.register form .form-group .captcha-btn{
+	font-size: 13px;
+	text-decoration: underline;
+}
+.register form .form-group .checkbox-label{
+	font-size: 13px;
+	color: #666;
+}
+.register form .register-button{
+	position: relative;
+	left: 35%;
+	bottom: -20px;
+}
+.register form .register-button .btn{
+	width: 100px;
+	position: relative;	
+	margin-right: 15px;
+}
+.footer-info{
+	margin-left: 38%;
+	margin-top: 80px;
+}
