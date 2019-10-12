@@ -1,5 +1,5 @@
 # travel-hotel
- 旅游酒店网页前端
+ 旅游酒店网页前端      
 [登录页面](https://believexia.github.io/travel-hotel/login.html)    
 [注册页面](https://believexia.github.io/travel-hotel/register.html)    
 [找回密码页面](https://believexia.github.io/travel-hotel/change-password.html)    
