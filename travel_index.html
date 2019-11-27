@@ -6,8 +6,6 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/headerfooter.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
-	<script src="./js/travel.js"></script>
 </head>
 <body>
 	<header class ="header">
@@ -226,12 +224,10 @@
 								</p>
 								<div class="date-picker ">
 									<div class="dt-come-time ">
-										<span class="">07月28日</span>
-										<input type="submit" class="checkin-btn" value=""/>
+										<input type="date" placeholder="2019/7/28" id="comeDate" />
 									</div>
 									<div class="dt-out-time ">
-										<span class="">07月30日</span>
-										<input type="submit" class="checkout-btn" value=""/>
+										<input type="date" placeholder="2019/7/28" id="outDate" />
 									</div>
 								</div>
 							</div>
@@ -608,5 +604,9 @@
 			</div>
 		</div>	
 	</footer>
+	<a href="javascript:;" class="backTop-btn" id="back-Top-btn"></a>
+
+	<script src="./js/jquery.js"></script>
+	<script src="./js/travel.js"></script>
 </body>
 </html>

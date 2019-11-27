@@ -96,7 +96,7 @@ body{
 	display: none;
 	z-index:1;
 	background-color: #eee;
-	    
+
 }
 .rel-me .contact span{
 	font-size: 15px;
@@ -336,4 +336,18 @@ body{
 }
 .footer-fourthbody .footer-about a:hover{
 	color: #000;
+}
+/* 回到顶部----------------------------------------------------------------*/
+.backTop-btn{
+	position: fixed;
+	display: none;
+	left:50%;
+	bottom: 30px;
+	margin-left: 610px;
+	width: 40px;
+	height: 40px;
+	background: url(../img/top_bg.png) no-repeat left top;
+}
+.backTop-btn:hover{
+	background: url(../img/top_bg.png) no-repeat left -40px;
 }

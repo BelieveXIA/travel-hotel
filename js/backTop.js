@@ -1,29 +1,11 @@
-
-window.onload=function(){
-
-	var dib=document.getElementById("dec_input_btn");
-	var ds=document.getElementById("dec_select");
-	var hsb=document.getElementById("hs_btn");
-	var hsh=document.getElementById("hs_hide");
-	var comeDate =document.getElementById("comeDate");
-	var outDate =document.getElementById("outDate");
+//页面加载完触发
+window.onload =function () {
 	var backbtn= document.getElementById('back-Top-btn');
 	//获取可视区的高度，一屏高度
 	var clientHeight = document.documentElement.clientHeight;
 	var backtoptime = null;
 	var isTop = true;
 
-	dib.onclick = function(){
-		Show_Hide(ds);
-		return false;
-	};
-
-	comeDate.onclick = function(){
-		comeDate.type = "date";
-	};
-	outDate.onclick = function(){
-		outDate.type = "date";
-	};
 	//滚动条滚动时，用户滚动鼠标滚轮触发
 	window.onscroll = function(){
 		var osTop = document.documentElement.scrollTop || document.body.scrollTop;//兼容IE和普通浏览器
@@ -57,17 +39,4 @@ window.onload=function(){
 			}
 		},30);
 	};
-	hsb.onclick = function(){
-		Show_Hide(hsh);
-		return false;
-	};
 };
-function Show_Hide(obj){
-	if(obj.style.display=="none"){
-		obj.style.display='block';
-	}else{
-		obj.style.display='none';
-	}
-}
-
-

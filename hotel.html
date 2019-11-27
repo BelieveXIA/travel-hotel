@@ -6,8 +6,6 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/headerfooter.css">
 	<link rel="stylesheet" type="text/css" href="css/hotel.css">
-	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
-	<script src="./js/travel.js"></script>
 </head>
 <body>
 	<header class ="header">
@@ -166,10 +164,10 @@
 					</div>
 					<div class="fbc-data clearfloat">
 						<label class="fbc-data-come">入住日期</label>
-						<input type="text" name="" class="fbc-data-input1" value="7月28日" />	
+						<input type="text" placeholder="2019/7/28" id="comeDate" class="fbc-data-input1"/>
 						<input type="text" name="" class="fbc-data-input2" value="2晚" />
 						<label class="fbc-data-out">退房日期</label>
-						<input type="text" name="" class="fbc-data-input3" value="7月30日" />
+						<input type="text" placeholder="2019/7/30" id="outDate" class="fbc-data-input3"/>
 					</div>
 					<div class="fbc-live_numb clearfloat">
 						<label class="fbc-live_numb-title">每房入住人数</label>
@@ -1036,5 +1034,9 @@
 			</div>
 		</div>
 	</footer>
+	<a href="javascript:;" class="backTop-btn" id="back-Top-btn"></a>
+	
+	<script src="./js/jquery.js"></script>
+	<script src="./js/travel.js"></script>
 </body>
 </html>
